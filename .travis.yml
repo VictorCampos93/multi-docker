@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t victorcampo5/multi-client ./client
-  - docker build -t vvictorcampo5/multi-nginx ./nginx
+  - docker build -t victorcampo5/multi-nginx ./nginx
   - docker build -t victorcampo5/multi-server ./server
   - docker build -t victorcampo5/multi-worker ./worker
 
@@ -19,4 +19,3 @@ after_success:
   - docker push victorcampo5/multi-nginx
   - docker push victorcampo5/multi-server
   - docker push victorcampo5/multi-worker
-  
