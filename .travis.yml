@@ -9,13 +9,13 @@ script:
   - docker run victorcampos93/react-test npm test -- --coverage
 
 after_success:
-  - docker build -t victorcampos93/multi-client ./client
-  - docker build -t victorcampos93/multi-nginx ./nginx
-  - docker build -t victorcampos93/multi-server ./server
-  - docker build -t victorcampos93/multi-worker ./worker
+  - docker build -t victorcampo5/multi-client ./client
+  - docker build -t vvictorcampo5/multi-nginx ./nginx
+  - docker build -t victorcampo5/multi-server ./server
+  - docker build -t victorcampo5/multi-worker ./worker
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push victorcampos93/multi-client
-  - docker push victorcampos93/multi-nginx
-  - docker push victorcampos93/multi-server
-  - docker push victorcampos93/multi-worker
+  - docker push victorcampo5/multi-client
+  - docker push victorcampo5/multi-nginx
+  - docker push victorcampo5/multi-server
+  - docker push victorcampo5/multi-worker
