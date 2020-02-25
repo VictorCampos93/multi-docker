@@ -2,9 +2,9 @@
     "AWSEDockerrunVersion": 2,
     "containerDefinitions": [
         {
-            "name": "client", //pode ser qualquer nome
+            "name": "client",
             "image": "victorcampo5/multi-client",
-            "hostname": "client", //nome de referencia para outros servicos
+            "hostname": "client",
             "essential": false,
             "memory": 128
         },
